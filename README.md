@@ -4,7 +4,7 @@ Game dùng WebSocket để người chơi trong cùng bệnh viện nhìn thấy
 
 ## Chạy thử trên máy
 
-Cần Node.js 18 trở lên. Đặt `a.html`, `server.js` và `package.json` cùng một thư mục, sau đó chạy:
+Cần Node.js 18 trở lên. Đặt `goto_hospital.html`, `server.js` và `package.json` cùng một thư mục, sau đó chạy:
 
 ```powershell
 npm install
@@ -15,7 +15,7 @@ Mở <http://localhost:3000>. Để kiểm tra nhiều người, mở trang đó
 
 ## Đưa lên mạng bằng Render
 
-1. Tạo một GitHub repository **riêng cho game**; đừng tải toàn bộ thư mục Downloads lên. Chỉ đưa `a.html`, `server.js`, `package.json`, `render.yaml` và `README.md` vào repository.
+1. Tạo một GitHub repository **riêng cho game**; đừng tải toàn bộ thư mục Downloads lên. Chỉ đưa `goto_hospital.html`, `server.js`, `package.json`, `render.yaml` và `README.md` vào repository.
 2. Trong Render, chọn **New → Blueprint**, kết nối repository đó và triển khai dịch vụ `di-benh-vien-online`.
 3. Mở đường dẫn HTTPS mà Render cấp. Gửi cùng đường dẫn đó cho bạn bè; mỗi người tạo hoặc tiếp tục nhân vật rồi vào game.
 

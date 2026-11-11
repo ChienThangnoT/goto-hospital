@@ -8,7 +8,7 @@ const { WebSocketServer, WebSocket } = require('ws');
 
 const PORT = Number(process.env.PORT) || 3000;
 const MAX_PLAYERS = 80;
-const GAME_FILE = path.join(__dirname, 'a.html');
+const GAME_FILE = path.join(__dirname, 'goto_hospital.html');
 const clients = new Map();
 
 function safeText(value, maxLength) {
@@ -86,14 +86,14 @@ const server = http.createServer((request, response) => {
     response.end('ok');
     return;
   }
-  if (request.method !== 'GET' || (pathname !== '/' && pathname !== '/a.html')) {
+  if (request.method !== 'GET' || (pathname !== '/' && pathname !== '/goto_hospital.html')) {
     response.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
     response.end('Not found');
     return;
   }
   fs.readFile(GAME_FILE, (error, html) => {
     if (error) {
-      console.error('Không đọc được a.html:', error);
+      console.error('Không đọc được goto_hospital.html:', error);
       response.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
       response.end('Không thể tải game.');
       return;
