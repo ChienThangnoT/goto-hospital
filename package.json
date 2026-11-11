@@ -1,0 +1,15 @@
+{
+  "name": "di-benh-vien-online-multiplayer",
+  "version": "1.5.0",
+  "private": true,
+  "description": "Máy chủ WebSocket cho Đi Bệnh Viện Online",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}

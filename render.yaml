@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: di-benh-vien-online
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
